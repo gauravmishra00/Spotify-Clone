@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify- The Last Song</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="songplayer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="cross">
+                <img src="svg/x-solid.svg" alt="" class="inevert img">
+            </div>
+            <div class="home">
+                <img src="svg/logo.svg" alt="" id="logo" class="inevert">
+                <ul>
+                    <li><img src="svg/house-solid.svg" alt="Home" class="inevert">Home</li>
+                    <li><img src="svg/magnifying-glass-solid (1).svg" alt="Search" class="inevert">Search</li>
+                </ul>
+            </div>
+            <div class="library">
+                <div class="library-container">
+                    <img src="svg/magnifying-glass-solid (1).svg" alt="library" class="img inevert" >
+                <h3>Your Library</h3>
+                </div>
+                <div class="songs">
+                    <!-- <div class="info">
+                        <img src="svg/house-solid.svg" alt="" class="img inevert">
+                        <div class="song-info">
+                            <div class="song-name">Song Name</div>
+                        <div class="artist">Artist Name</div>
+                        </div>
+                    </div> -->
+                    <ul id="#songList">
+
+
+
+                        <li><a href="music/1.mp3"><img src="svg/music-solid.svg" alt="" class="img inevert">Ting Tong</a><button class="songPlayBtn PlayBtn">Play</button></li>
+
+
+
+                        <li><a href="music/2.mp3"><img src="svg/music-solid.svg" alt="" class="img inevert songLink">My Heart Is Falling For You</a><button class="songPlayBtn PlayBtn">Play</button></li>
+                        <li><a href="music/3.mp3"><img src="svg/music-solid.svg" alt="" class="img inevert ">?</a><button class="songPlayBtn PlayBtn">Play</button></li>
+                        <li><a href="music/Jevin Gill, Talha Anjum - Regrets (Official Audio) ｜ Prod. by Umair.mp3"><img src="svg/music-solid.svg" alt="" class="img inevert">Jevin Gill</a>
+                        <button class="songPlayBtn PlayBtn">Play</button></li>
+                        
+                    </ul>
+                </div>
+                <div class="library-footer">
+                    <ul>
+                        <li><a href="">legal</a></li>
+                        <li><a href="">account</a></li>
+                        <li><a href="">policy</a></li>
+                        <li><a href="">cookies</a></li>
+                        <li><a href="">about ads</a></li>
+                        <li><a href="">accessibilty</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-header">
+                
+                <div class="left-box img">
+
+                    <div class="hamburger">
+                        <img src="svg/bars-regular.svg" alt="" class="inevert img">
+                    </div>
+
+                    <img src="svg/chevron-left-solid.svg" alt="left-arrow" class="inevert">
+                <img src="svg/chevron-right-solid.svg" alt="rigth-arrow" class="inevert">
+                </div>
+                <div class="right-box">
+                    <button class="sign-up">Sign Up</button>
+                    <button class="log-in">Log in</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h1>Spotify Playlist</h1>
+               <div class="card">
+                <div class="box">
+                    <a href="Arijit Singh.html">
+                        <img src="music/Arjeet/Arijit.jpeg" alt="">
+                    <h3>Arjit Singh</h3>
+                    <p>All Time Hits</p>
+                    <button><img src="svg/play-solid.svg" alt="" class="img"></button>
+                    </a>
+                </div>
+                <div class="box">
+                   <a href="songPlaylist.html">
+                    <img src="image/1.jpg" alt="">
+                    <h3>Happy Hits!</h3>
+                    <p>Hits to boost your mood and fill you with ...</p>
+                    <button><img src="svg/play-solid.svg" alt="" class="img"></button>
+                   </a>
+                </div>
+               </div>
+            </div>
+            <div id="song-progress-bar" class="song-bar">
+                <input type="range" min="0" max="100" value="0" step="1" id="seekbar">
+                <div id="song-time">
+                <span id="currentTime">0:00</span>
+                <span id="show-song-name">Play Song</span>
+                <span id="totalTime">0:00</span>
+                </div>
+            </div>
+            <div id="songBar">
+                <!-- <div id="show-song-name">
+                    Play Song!
+                </div> -->
+                <div class="player">
+                    <audio src="" id="audioPlayer" ></audio>
+                    <div class="player-buttons ">
+                        <button id="prevBtn"><img src="svg/backward-fast-solid.svg" alt="" ></button>
+                        <button id="playPauseBtn"><img src="svg/circle-play-regular.svg" alt="" id="play-image"></button>
+                        <button id="nextBtn"><img src="svg/forward-fast-solid.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="script2.js"></script> -->
+    <!-- <script src="songPlaylist.js"></script> -->
+</body>
+</html>

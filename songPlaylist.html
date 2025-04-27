@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Hits</title>
+    <!-- <link rel="stylesheet" href="utility.css"> -->
+    <!-- <link rel="stylesheet" href="songplayer.css"> -->
+    <link rel="stylesheet" href="playlist.css">
+    <!-- <title></title> -->
+</head>
+
+<body>
+    <div class="playLists">
+        
+        <div class="songs">
+            <h1>Spotify Playlist</h1>
+            <ul id="#songList">
+                <li><a href="music/1.mp3"><img src="svg/music-solid.svg" alt="" class="img">Taylor swift- Blank space</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/2.mp3"><img src="svg/music-solid.svg" alt="" class="img">ED Shereen - Shape of you</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/3.mp3"><img src="svg/music-solid.svg" alt="" class="img">Tones and I - Dance monkey</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/4.mp3"><img src="svg/music-solid.svg" alt="" class="img">Dua Lipa - Levetating</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/5.mp3"><img src="svg/music-solid.svg" alt="" class="img">AR Rahman violin music </a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/6.mp3"><img src="svg/music-solid.svg" alt="" class="img">Animal - sari duniya  </a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/7.mp3"><img src="svg/music-solid.svg" alt="" class="img">Kabir singh - bekhayali</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/8.mp3"><img src="svg/music-solid.svg" alt="" class="img">Mustafa mustafa - telugu</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/9.mp3"><img src="svg/music-solid.svg" alt="" class="img">Em sandeham ledu - telugu</a><button class="PlayBtn">Play</button></li>
+
+            </ul>
+        </div>
+        <div class="palyer">
+            <!-- <audio src="" id="audioPlayer"></audio> -->
+            <div class="seekbar">
+                <input type="range" min="0" id="seekbar" step="1" max="100" value="0">
+            </div>
+            <div class="song-time">
+                <span id="current-time">0:00</span>
+                <span class="playPauseBtn"><img src="svg/circle-play-regular.svg" alt="" class="img" id="playPauseBtn"></span>
+                <span id="total-time">0:00</span>
+            </div>
+        </div>
+    </div>
+<script src="songPlaylist.js"></script>
+</body>
+
+</html>

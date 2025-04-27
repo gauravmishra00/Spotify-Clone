@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="utility.css"> -->
+    <!-- <link rel="stylesheet" href="songplayer.css"> -->
+    <link rel="stylesheet" href="playlist.css">
+</head>
+
+<body>
+    <div class="playLists">
+        
+        <div class="songs">
+            <h1>Spotify Playlist</h1>
+            <ul id="#songList">
+                <li><a href="music/Arjeet/bollywood_ADHM - Ae Dil Hai Mushkil.mp3"><img src="svg/music-solid.svg" alt="" class="img">Ae Dil Hai Mushkil</a><button class="PlayBtn">Play</button></li>
+                <li><a href="music/Arjeet/new_128_01 - Tum Hi Ho - PagalSongs.com.mp3"><img src="svg/music-solid.svg" alt="" class="img">Tum Hi Ho</a><button class="PlayBtn">Play</button></li>
+               
+            </ul>
+        </div>
+        <div class="palyer">
+            <!-- <audio src="" id="audioPlayer"></audio> -->
+            <div class="seekbar">
+                <input type="range" min="0" id="seekbar" step="1" max="100" value="0">
+            </div>
+            <div class="song-time">
+                <span id="current-time">0:00</span>
+                <span class="playPauseBtn"><img src="svg/circle-play-regular.svg" alt="" class="img" id="playPauseBtn"></span>
+                <span id="total-time">0:00</span>
+            </div>
+        </div>
+    </div>
+<script src="songPlaylist.js"></script>
+</body>
+
+</html>
